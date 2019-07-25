@@ -1,0 +1,71 @@
+<head>
+    <!-- Created with ♥ by TLC <http://github.com/tlclassless/> -->
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <title>Top Left, est. 2015</title>
+    <link rel="icon" type="image/svg" href="/img/icon_small_50_YAO_icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.5/destyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta name="description" content="Top Left, eSports in URL only. We play games, we stream, we shoot videos then we play more games! Est. 2015.">
+    <meta tags="gaming, esports, funny, streaming, team, british, Top Left, games, ThAr201, TLClassless, Condor Mankini, Woopsicles, Sicksteen10">
+    <meta name="author" content="TLClassless">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="header">
+        <img class="header-logo" a href="/index.html" src="img/top-left-head.svg">
+        <ul class="header-nav">
+            <li a href="/about.html">About Us</li>
+            <li a href="/members.html">Members</li>
+            <li a href="/store.html">Store</li>
+        </ul>
+    </div>
+
+    <div class="status-bar">
+        
+    </div>
+   
+    <div class="func-zone">
+        <div class="func-stream"> <iframe id="func-zone" src="https://player.twitch.tv/?channel=sicksteen10" frameborder="0" allowfullscreen="true" scrolling="no" height="564" width="1000"></iframe><a href="https://www.twitch.tv/sicksteen10?tt_content=text_link&tt_medium=live_embed"></a></div>
+        
+        <div class="func-switch">
+<!-- MAKE SWITCH FUNCTIONALITY, JS - ON CLICK GREY OUT SVG OF STREAMERS ICON & SWITCH STREAM TO THEIRS BY CHANGING ?CHANNEL=SICKSTEEN10 TO ?CHANNEL=TLCLASSLESS/CONDORMANKINI -->
+            <ul class="func-switch-list">
+                <li data-ico="0" id="s10ico"><img  src="img/s10-ico.svg"></li>
+                <li data-ico="1" id="tlcico"><img  src="img/tlc-ico.svg"></li>
+                <li data-ico="2" id="cdrico"><img  src="img/cdr-ico.svg"></li>
+                <li data-ico="3" id="thrico"><img src="img/thr-ico.svg"></li> 
+                <li data-ico="4" id="wpsico"><img src="img/wps-ico.svg"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="video-container">
+       <div class="video-title"><h2>Recent TL Videos</h2><a href="http://youtube.com/classle55/">see more</a></div>
+        <div class="video-zone">
+            <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/Pe4wn8U_sKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/p8h-ab2GwkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/gV17zmcv5uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-copyright">© Top Left eSports 2019</p>
+    </div>
+    
+    <!-- js -->
+    
+<script>
+    
+    var srcs = ["https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
+    
+document.getElementById("s10ico").addEventListener("click", streamSwitch);
+
+function streamSwitch() {
+var imgpos = document.getElementById("s10ico").dataset.ico
+    console.log(imgpos);
+document.getElementById("func-zone").src=srcs[imgpos];
+}
+    </script>
+
+</body>
