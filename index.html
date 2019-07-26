@@ -35,8 +35,8 @@
                 <li data-ico="0" id="s10ico"><img  src="img/s10-ico.svg"></li>
                 <li data-ico="1" id="tlcico"><img  src="img/tlc-ico.svg"></li>
                 <li data-ico="2" id="cdrico"><img  src="img/cdr-ico.svg"></li>
-                <li data-ico="3" id="thrico"><img src="img/thr-ico.svg"></li> 
-                <li data-ico="4" id="wpsico"><img src="img/wps-ico.svg"></li>
+        <!--    <li data-ico="3" id="thrico"><img                     src="img/thr-ico.svg"></li> 
+                <li data-ico="4" id="wpsico"><img src="img/wps-ico.svg"></li> -->
             </ul>
         </div>
     </div>
@@ -66,6 +66,33 @@ var imgpos = document.getElementById("s10ico").dataset.ico
     console.log(imgpos);
 document.getElementById("func-zone").src=srcs[imgpos];
 }
-    </script>
+    
+        var srcs = ["https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
+    
+</script>
+
+<script>
+
+document.getElementById("tlcico").addEventListener("click", streamSwitch);
+
+function streamSwitch() {
+var imgpos = document.getElementById("tlcico").dataset.ico
+    console.log(imgpos);
+document.getElementById("func-zone").src=srcs[imgpos];
+}
+    
+</script>
+
+<script>
+
+document.getElementById("cdrico").addEventListener("click", streamSwitch);
+
+function streamSwitch() {
+var imgpos = document.getElementById("cdrico").dataset.ico
+    console.log(imgpos);
+document.getElementById("func-zone").src=srcs[imgpos];
+}
+    
+</script>
 
 </body>
