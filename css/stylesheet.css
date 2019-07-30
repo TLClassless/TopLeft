@@ -8,14 +8,14 @@ body {
 
 .header {
     font-weight: 550;
-    height: 150px;
+    height: 100px;
     width: 100%;
     position: relative;
     background-color: #DBDBDB; 
 }
 
 .header-logo {
-    height: 100px;
+    height: 70px;
     width: auto;
     position: absolute;
     top: 50%;
@@ -28,7 +28,7 @@ body {
     list-style: none;
     float: right;
     margin-right: 100px;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
 .header-nav li {
@@ -50,6 +50,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.func-switch-list {
+    width: 100%;
+    display: inline;
+    float: left;
 }
 
 .func-stream {
@@ -113,3 +119,29 @@ body {
     color: white;
 }
 
+/*   ABOUT   */
+
+.about-title {
+    padding: 10px;
+    font-size: 30pt;
+    font-style: normal;
+    text-align: center;
+}
+
+.about-title h3 {
+    font-size: 15pt;
+    font-style: oblique;
+}
+
+.about-signatures {
+    display: block;
+}
+
+.about-signatures img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+}
