@@ -13,12 +13,14 @@
 </head>
 
 <body>
+   <div class="wrapper">
     <div class="header">
-        <img class="header-logo" a href="/index.html" src="img/top-left-head.svg">
+        <a href="index.html"><img class="header-logo" src="img/top-left-head.svg"></a>
         <ul class="header-nav">
-            <li a href="about.html">About Us</li>
-            <li a href="members.html">Members</li>
-            <li a href="http://redbubble.com/user/tlclassless/">Store</li>
+           <li class="nav-item"><img class="current-page" src="img/home.svg"></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item"><a href="members.html">Members</a></li>
+            <li class="nav-item"><a href="https://www.redbubble.com/people/TopLeft">Store</a></li>
         </ul>
     </div>
 
@@ -27,15 +29,15 @@
     </div>
 
     <div class="func-zone">
-        <div class="func-stream"> <iframe id="func-zone" src="https://player.twitch.tv/?channel=sicksteen10" frameborder="0" allowfullscreen="true" scrolling="no" height="564" width="1000"></iframe><a href="https://www.twitch.tv/sicksteen10?tt_content=text_link&tt_medium=live_embed"></a></div>
+        <div class="func-stream"> <iframe id="func-zone" src="https://player.twitch.tv/?channel=topleftesports" frameborder="0" allowfullscreen="true" scrolling="no" height="564" width="1000"></iframe><a href="https://www.twitch.tv/sicksteen10?tt_content=text_link&tt_medium=live_embed"></a></div>
 
-       <div class="func-switch">
+        <div class="func-switch">
             <ul class="func-switch-list">
-                <li data-ico="0" id="s10ico"><img src="img/s10-ico.svg"></li>
-                <li data-ico="1" id="tlcico"><img src="img/tlc-ico.svg"></li>
-                <li data-ico="2" id="cdrico"><img src="img/cdr-ico.svg"></li>
-                <!--    <li data-ico="3" id="thrico"><img  src="img/thr-ico.svg"></li> 
-                <li data-ico="4" id="wpsico"><img  src="img/wps-ico.svg"></li> -->
+                <li data-ico="0" id="tlfico"><img src="img/tlf-ico.svg"></li>
+                <li data-ico="1" id="s10ico"><img src="img/s10-ico.svg"></li>
+                <li data-ico="2" id="tlcico"><img src="img/tlc-ico.svg"></li>
+                <li data-ico="3" id="cdrico"><img src="img/cdr-ico.svg"></li>
+                <!--<li data-ico="4" id="wpsico"><img  src="img/wps-ico.svg"></li>-->
             </ul>
         </div>
     </div>
@@ -45,29 +47,43 @@
             <h2>Recent TL Videos</h2><a href="http://youtube.com/classle55/">see more</a>
         </div>
         <div class="video-zone">
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/Pe4wn8U_sKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/p8h-ab2GwkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/gV17zmcv5uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/rkP4HlNra4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/Y5LZx5uhmck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            
+
             <div class="video-player"><iframe width="460" height="260" src="https://www.youtube.com/embed/BYYQI1Br8Gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
-        
+
     </div>
     <div class="footer">
         <p class="footer-copyright">© Top Left eSports 2019</p>
     </div>
+    </div>
     <!-- js -->
 
     <script>
-        var srcs = ["https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
+        var srcs = ["https://player.twitch.tv/?channel=topleftesports", "https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
 
+        document.getElementById("tlfico").addEventListener("click", streamSwitch);
+
+        function streamSwitch() {
+            var imgpos = document.getElementById("tlfico").dataset.ico
+            console.log(imgpos);
+            document.getElementById("func-zone").src = srcs[imgpos];
+        }
+
+        var srcs = ["https://player.twitch.tv/?channel=topleftesports", "https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
+
+    </script>
+
+    <script>
         document.getElementById("s10ico").addEventListener("click", streamSwitch);
 
         function streamSwitch() {
@@ -75,8 +91,6 @@
             console.log(imgpos);
             document.getElementById("func-zone").src = srcs[imgpos];
         }
-
-        var srcs = ["https://player.twitch.tv/?channel=sicksteen10", "https://player.twitch.tv/?channel=tlclassless", "https://player.twitch.tv/?channel=condormankini"];
 
     </script>
 
