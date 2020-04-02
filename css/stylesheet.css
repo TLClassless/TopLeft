@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+.top-wrap {
+    background-color: #d3d3d3;
+    padding-bottom: 20px;
 }
 
 .wrapper {
@@ -10,10 +16,10 @@ body {
 
 .header {
     font-weight: 550;
-    height: 100px;
+    height: 90px;
     width: 100%;
     position: relative;
-    background-color: #DBDBDB; 
+    /* background-color: #DBDBDB; */ 
 }
 
 .current-page {
@@ -22,6 +28,15 @@ body {
 
 .header a {
     font-weight: 500;
+}
+
+#nav-active {
+    color: #941517;
+    font-weight: bolder;
+}
+
+.header a:hover {
+    color: #941517;
 }
 
 .header-logo {
@@ -38,7 +53,7 @@ body {
     list-style: none;
     float: right;
     margin-right: 100px;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 .header-nav li {
@@ -47,15 +62,27 @@ body {
     margin-right: 25px;
 }
 
+.header-logo {
+    font-size: 30pt;
+    font-weight: 700;
+    padding-top: 6pt;
+    color: #000000;
+}
+
+.header-logo:hover {
+    color: #000000;
+}
+
 .status-bar {
+    display: none;
     height: 25px;
     width: 100%;
     background-color: #941517;
 }
 
 .func-zone {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -84,20 +111,33 @@ body {
 }
 
 .video-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.video-container img {
+    padding: 14px;
+    height: 300px;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card {
+    flex: 0 0 auto;
 }
 
 .video-title {
     display: block;
-    padding-bottom: 10px;
-    font-size: 15pt;
-    text-align: center;
-}
-
-.video-title a {
-    font-size: 10pt;
-    color: #941517;
+    padding-bottom: 20px;
+    font-size: 24pt;
+    font-weight: 770;
+    text-align: left;
+    margin-left: 100px;
 }
 
 .video-zone {
@@ -106,6 +146,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .video-player {
@@ -208,7 +250,6 @@ body {
     margin-bottom: 30px;
     width: 100%;
     height: 300px;
-    
 }
 
 .member-name h3 {
