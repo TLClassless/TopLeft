@@ -43,7 +43,7 @@ body {
     height: 70px;
     width: auto;
     position: absolute;
-    top: 50%;
+    top: 45%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: 100px;
@@ -140,6 +140,20 @@ body {
     margin-left: 100px;
 }
 
+.video-subtitle {
+    display:block;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.video-subtitle a {
+    font-weight: 770;
+}
+
+.video-subtitle a:hover {
+    color:#941517;
+}
+
 .video-zone {
     width: 85%;
     display: flex;
@@ -148,6 +162,14 @@ body {
     flex-wrap: wrap;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.card {
+    filter: hue-rotate(0deg) brightness(40%) grayscale(50%);
+}
+
+.card:hover{
+    filter: none;
 }
 
 .video-player {
