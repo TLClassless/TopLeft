@@ -117,7 +117,7 @@ body {
 
 .video-container img {
     padding: 14px;
-    height: 300px;
+    height: 260px;
 }
 
 .scrolling-wrapper {
@@ -165,6 +165,10 @@ body {
     margin-right: 100px;
 }
 
+.video-title h3 {
+    font-size: 15pt;
+}
+
 .card {
     filter: hue-rotate(0deg) brightness(90%) grayscale(50%);
 }
@@ -175,7 +179,7 @@ body {
 
 .video-player {
     display: inline-block;
-    padding: 10px;
+    padding-right: 5px;
 }
 
 /** LIGHTBOX MARKUP **/
