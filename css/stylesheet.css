@@ -98,6 +98,19 @@ body {
     display: block;
 }
 
+.switch-ico {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.switch-ico:hover {
+    opacity: 1;
+}
+
+.switch-ico-active {
+    opacity: 1;
+}
+
 .func-switch img {
     height: 50px;
     width: auto;
@@ -170,6 +183,7 @@ body {
 
 .card {
     filter: hue-rotate(0deg) brightness(90%) grayscale(50%);
+    transition: 0.3s;
 }
 
 .card:hover{
