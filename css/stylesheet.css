@@ -37,6 +37,7 @@ body {
 
 .header a:hover {
     color: #941517;
+    transition: 0.2s;
 }
 
 .header-logo {
@@ -60,6 +61,7 @@ body {
     display: inline;
     margin-left: 25px;
     margin-right: 25px;
+    transition: 0.3s;
 }
 
 .header-logo {
@@ -160,6 +162,7 @@ body {
 
 .video-subtitle a:hover {
     color:#941517;
+    transition: 0.3s;
 }
 
 .video-zone {
