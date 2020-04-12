@@ -100,17 +100,13 @@ body {
     display: block;
 }
 
+#switch-ico-0 {
+    opacity: 1;
+}
+
 .switch-ico {
-    opacity: 0.8;
+    opacity: 0.6;
     transition: 0.3s;
-}
-
-.switch-ico:hover {
-    opacity: 1;
-}
-
-.switch-ico-active {
-    opacity: 1;
 }
 
 .func-switch img {
@@ -162,7 +158,7 @@ body {
 
 .video-subtitle a:hover {
     color:#941517;
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 
 .video-zone {
