@@ -76,18 +76,21 @@ body {
 }
 
 .func-zone {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .func-switch-list {
-    -width: 100%;
-    display: inline;
-    -float: left;
+    margin-top: 2px;
+    width: 100%;
+    display: inline-flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
 }
 
 .func-stream {
@@ -96,9 +99,6 @@ body {
     display: inline-block;
 }
 
-.func-switch {
-    display: block;
-}
 
 #switch-ico-0 {
     opacity: 1;
@@ -107,6 +107,7 @@ body {
 .switch-ico {
     opacity: 0.6;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .func-switch img {
