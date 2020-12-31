@@ -108,6 +108,7 @@ body {
   opacity: 0.6;
   transition: 0.3s;
   display: inline-block;
+  cursor: pointer;
 }
 
 .func-switch img {
