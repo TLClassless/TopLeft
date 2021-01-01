@@ -18,6 +18,7 @@
   />
   <meta name="author" content="TLClassless" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 
 <body>
@@ -37,18 +38,22 @@
 
       <div class="func-zone">
         <div class="func-stream">
-          <iframe
-            id="func-zone"
-            src="https://player.twitch.tv/?channel=topleftesports"
-            frameborder="0"
-            allowfullscreen="true"
-            scrolling="no"
-            height="564"
-            width="1000"
-          ></iframe
-          ><a
-            href="https://www.twitch.tv/sicksteen10?tt_content=text_link&tt_medium=live_embed"
-          ></a>
+          <!-- Add a placeholder for the Twitch embed -->
+          <div id="twitch-embed"></div>
+
+          <!-- Load the Twitch embed script -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+          <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: "100%",
+              height: "100%",
+              channel: "topleftesports",
+
+              parent: ["localhost"],
+            });
+          </script>
         </div>
 
         <div class="func-switch">
