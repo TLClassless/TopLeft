@@ -6,6 +6,14 @@ body {
   height: 100%;
 }
 
+.ham {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
 .top-wrap-index {
   background-color: #d3d3d3;
   padding-bottom: 20px;
@@ -40,6 +48,52 @@ body {
   margin: 0 5%;
   height: 40pt;
   align-items: center;
+}
+
+.ham {
+  display: none;
+  position: absolute;
+  /* always keep ham on top of everything */
+  z-index: 1000;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  /* show the menu image */
+  background-image: url("/img/ham.svg");
+  background-size: 100%;
+}
+
+#darkburger {
+  background-image: url("/img/ham-dark.svg");
+}
+
+.showClose {
+  background-image: url("/img/ham-close.svg");
+}
+
+.navbar {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  /* hide the menu above the screen by default */
+  transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+}
+
+.showNav {
+  /* show the menu */
+  transform: translateY(0);
 }
 
 .header-nav {
@@ -349,9 +403,26 @@ body {
 
 @media only screen and (max-width: 768px) {
   /* nav */
+  .ham {
+    display: flex;
+  }
+
+  .ham-dark {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+  }
+
   .navigation {
     display: none;
   }
+
   /* home */
   .wrapper {
     height: 100%;
