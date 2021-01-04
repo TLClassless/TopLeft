@@ -387,4 +387,51 @@ body {
   .video-container img {
     height: 200px;
   }
+  /* about */
+  .about-title h2 {
+    font-size: 20pt;
+  }
+  .about-title h3 {
+    font-size: 14pt;
+  }
+
+  .about-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 10px;
+    font-size: 12pt;
+  }
+
+  .about-signatures img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100px;
+    padding: 6px;
+  }
+
+  /* members */
+
+  .member-centre {
+    margin-top: 0;
+  }
+
+  .member-photo img {
+    margin-right: 0;
+    float: none;
+    width: 100%;
+  }
+
+  .member-name h3 {
+    font-size: 20pt;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+  }
 }
