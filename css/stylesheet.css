@@ -12,11 +12,18 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
   font-weight: 550;
   height: 90px;
   width: 100%;
   position: relative;
   /* background-color: #DBDBDB; */
+}
+
+.header-logo {
+  font-size: 20pt;
+  font-weight: 600;
 }
 
 .current-page {
@@ -27,6 +34,22 @@ body {
   font-weight: 500;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  height: 40pt;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10pt;
+}
+
 #nav-active {
   color: #941517;
   font-weight: bolder;
@@ -35,41 +58,6 @@ body {
 .header a:hover {
   color: #941517;
   transition: 0.2s;
-}
-
-.header-logo {
-  height: 70px;
-  width: auto;
-  position: absolute;
-  top: 45%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 100px;
-}
-
-.header-nav {
-  list-style: none;
-  float: right;
-  margin-right: 100px;
-  margin-top: 30px;
-}
-
-.header-nav li {
-  display: inline;
-  margin-left: 25px;
-  margin-right: 25px;
-  transition: 0.3s;
-}
-
-.header-logo {
-  font-size: 30pt;
-  font-weight: 700;
-  padding-top: 6pt;
-  color: #000000;
-}
-
-.header-logo:hover {
-  color: #000000;
 }
 
 .func-zone {
@@ -149,7 +137,12 @@ body {
   font-size: 24pt;
   font-weight: 770;
   text-align: left;
-  margin-left: 100px;
+}
+
+.video-title h2 {
+  margin: 0 5%;
+  font-size: 20pt;
+  font-weight: 600;
 }
 
 .video-subtitle {
@@ -157,6 +150,7 @@ body {
   font-size: 12pt;
   font-weight: 500;
   padding-top: 5px;
+  margin: 0 5%;
 }
 
 .video-subtitle a {
@@ -169,13 +163,11 @@ body {
 }
 
 .video-zone {
-  width: 85%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .video-title h3 {
@@ -246,7 +238,7 @@ body {
 
 .about-title {
   padding: 10px;
-  font-size: 30pt;
+  font-size: 20pt;
   font-style: normal;
   text-align: center;
 }
@@ -326,7 +318,7 @@ body {
 }
 
 .member-name h3 {
-  font-size: 45pt;
+  font-size: 20pt;
   font-weight: 550;
 }
 
@@ -419,6 +411,7 @@ body {
     margin-right: 0;
     float: none;
     width: 100%;
+    max-width: 400px;
   }
 
   .member-name h3 {
