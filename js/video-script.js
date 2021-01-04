@@ -5,16 +5,21 @@ var twitchEmbed = new Twitch.Embed("twitch-embed", {
   height: "100%",
   channel: "topleftesports",
 
-  parent: ["topleftesports.com"],
+  parent: [
+    "topleftesports.com",
+    "localhost",
+    "tlclassless.github.io",
+    "www.topleftesports.com",
+  ],
 });
 
 console.log(twitchEmbed._iframe.attributes[0].nodeValue);
 
 var srcs = [
-  "https://embed.twitch.tv/?channel=topleftesports&height=100%25&migration=true&parent=topleftesports.com&referrer=http%3A%2F%topleftesports.com%3A5500%2F&width=100%25",
-  "https://embed.twitch.tv/?channel=sicksteen10&height=100%25&migration=true&parent=topleftesports.com&referrer=http%3A%2F%topleftesports.com%3A5500%2F&width=100%25",
-  "https://embed.twitch.tv/?channel=tlclassless&height=100%25&migration=true&parent=topleftesports.com&referrer=http%3A%2F%topleftesports.com%3A5500%2F&width=100%25",
-  "https://embed.twitch.tv/?channel=condormankini&height=100%25&migration=true&parent=topleftesports.com&referrer=http%3A%2F%topleftesports.com%3A5500%2F&width=100%25",
+  "https://embed.twitch.tv/?channel=topleftesports&height=100%25&migration=true&parent=topleftesports.com&parent=localhost&parent=tlclassless.github.io&parent=www.topleftesports.com&referrer=http%3A%2F%2Flocalhost%3A5500%2F&width=100%25",
+  "https://embed.twitch.tv/?channel=sicksteen10&height=100%25&migration=true&parent=topleftesports.com&parent=localhost&parent=tlclassless.github.io&parent=www.topleftesports.com&referrer=http%3A%2F%2Flocalhost%3A5500%2F&width=100%25",
+  "https://embed.twitch.tv/?channel=tlclassless&height=100%25&migration=true&parent=topleftesports.com&parent=localhost&parent=tlclassless.github.io&parent=www.topleftesports.com&referrer=http%3A%2F%2Flocalhost%3A5500%2F&width=100%25",
+  "https://embed.twitch.tv/?channel=condormankini&height=100%25&migration=true&parent=topleftesports.com&parent=localhost&parent=tlclassless.github.io&parent=www.topleftesports.com&referrer=http%3A%2F%2Flocalhost%3A5500%2F&width=100%25",
 ];
 
 var playerIco = document.getElementsByClassName("switch-ico");
@@ -31,6 +36,7 @@ for (i = 0; i < playerIco.length; i++) {
 function streamSwitch(i) {
   console.log(i);
   twitchEmbed._iframe.attributes[0].nodeValue = srcs[i];
+  console.log(twitchEmbed._iframe.attributes[0].nodeValue);
 }
 
 function myFunction(e) {
