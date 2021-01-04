@@ -1,9 +1,11 @@
-# Top Left eSports ↖️
+## Top Left eSports ↖️
 
-↖️ A website for the Top Left gaming organisation.
+### ↖️ Website description:
+A website for the Top Left streaming team.
+Made to be a hub to showcase the teams streaming pages.
 
-↖️ Made to be a hub to showcase the teams streaming pages.
+### ↖️ Technologies used:
+Created using HTML, CSS & Vanilla JS.
 
-↖️ Created using HTML, CSS & Vanilla JS.
-
-↖️ to be hosted @ http://topleftesports.com/
+### ↖️ Hosting:
+Static website, hosted @ http://topleftesports.com/ using github pages, cloudflare & godaddy.
