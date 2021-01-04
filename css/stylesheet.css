@@ -11,10 +11,6 @@ body {
   padding-bottom: 20px;
 }
 
-.wrapper {
-  min-width: 1050px;
-}
-
 .header {
   font-weight: 550;
   height: 90px;
@@ -355,4 +351,40 @@ body {
 
 #about-wrapper {
   height: 100%;
+}
+
+/***************** mobile ver *******************/
+
+@media only screen and (max-width: 768px) {
+  /* home */
+  .wrapper {
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .video-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    font-size: 12pt;
+  }
+
+  .video-title h2 {
+    font-size: 14pt;
+    font-weight: 800;
+  }
+
+  .video-zone {
+    margin: 0;
+    width: 100%;
+  }
+
+  .video-container img {
+    height: 200px;
+  }
 }
