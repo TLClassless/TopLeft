@@ -5,7 +5,7 @@ var twitchEmbed = new Twitch.Embed("twitch-embed", {
   height: "100%",
   channel: "topleftesports",
 
-  parent: ["tlclassless.github.io/topLeft/"],
+  parent: ["localhost", "tlclassless.github.io"],
 });
 
 console.log(twitchEmbed._iframe.attributes[0].nodeValue);
