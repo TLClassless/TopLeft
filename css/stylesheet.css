@@ -104,6 +104,10 @@ body {
   margin: 0 10pt;
 }
 
+.mob-nav-item {
+  margin: 20pt;
+}
+
 #nav-active {
   color: #941517;
   font-weight: bolder;
